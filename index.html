@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./filter.js"></script>
+  <script src="./productView.js"></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="filter-container">
+      <div class="filter-title">
+        <b>Filters</b>
+      </div>
+      <div class="filter-price">
+        <b>Price</b>
+        <div class="price-min">
+          <select class="price-min-dd" onchange="onChangeMinPriceFilter()">
+          </select>
+        </div>
+        to
+        <div class="price-max">
+          <select class="price-max-dd" onchange="onChangeMaxPriceFilter()">
+          </select>
+        </div>
+      </div>
+      <div class="filter-brand">
+        <div class="search-brand">
+          <input type="text" onchange="onChangeBrandFilter()" />
+        </div>
+      </div>
+      <div class="filter-color">
+        <b>Color</b>
+        <br/>
+        <div class="color-checkboxes" onchange=onChangeColorFilter()>
+        </div>
+      </div>
+    </div>
+    <div class="product-list-container">
+      <div class="sort-by">
+        <pre>   Sort By     Relevance   Price - Low to High   Price - High to Low</pre>
+        <div class="sort-by-text"></div>
+      </div>
+      <div class="product-grid-container">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
